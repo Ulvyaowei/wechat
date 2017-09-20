@@ -1,0 +1,66 @@
+#chat{
+	width: 100%;
+	overflow-y: scroll;	
+	/*flex-flow: column;*/
+	/*margin: 0 auto;	*/
+	display: flex;
+	flex-grow: 1;
+}
+
+#chat a{
+	height: 70px;
+	border-bottom: 1px solid gainsboro;		
+	display: flex;
+	width: 100%;
+	/*flex-flow: row nowrap;*/
+	/*justify-content: space-between;*/
+	align-items: center;
+}
+#chat img{
+	width: 60px;height: 60px; 
+}
+#chat-center{
+	height: 60px; flex-grow: 1;
+	padding-left: 10px;
+	display: flex;
+	flex-flow: column;
+	
+	white-space: nowrap;/* 强制不换行 */
+	/*text-overflow: ellipsis;*/ /* 超出省略号 */
+	overflow: hidden;
+	
+}
+#chat-name{
+	color: black;
+	font-size: larger;
+}
+#chat-content{
+	color: #BDBDBD;
+	overflow: hidden;
+}
+#chat-left{
+	 height: 60px; width:60px;
+	font-size:10px;
+	text-align: right;
+	color: #9e9e9e;
+	position: relative;
+}
+#chat-left div{
+	height: 13px;
+    width: 13px;
+    background-color: red;
+    font-weight: 800;
+    color: white;
+    line-height: 13px;
+    text-align: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border-radius: 50%;
+}
+#chat-right{
+	height: 60px; width:60px;
+	font-size: 15px;
+	text-align: right;
+	color: #9e9e9e;
+}

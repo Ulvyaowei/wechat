@@ -1,0 +1,66 @@
+#nav {
+	height: 70px;
+	width: 100%;
+	border-top: 1px solid rgb(158, 158, 158);
+	display: flex;
+	/*align-items: center;*/
+	/*text-align: center;*/
+	background-color: rgb(245, 245, 245);
+	box-shadow: 0 0 5px rgb(158, 158, 158);
+	/*min-width: 360px;*/
+}
+
+.red_one {
+	color: white;
+	height: 16px;
+	width: 16px;
+	border-radius: 8px;
+	background-color: red;
+	text-align: center;
+	line-height: 16px;
+	font-size: 80%;
+}
+
+.red_one_top {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}
+
+.red_one_bottom {
+	position: absolute;
+	top: 2px;
+	right: 0;
+}
+
+.nav-btn {
+	background-color: rgb(245, 245, 245);
+	width: 25%;
+	height: 100%;
+	text-align: center;
+}
+
+.nav-btn button {
+	position: relative;
+	border: 0;
+	text-align: center;
+	background-color: rgb(245, 245, 245);
+}
+
+.nav-btn img {
+	/*margin-top: 5px;*/
+	width: 40px;
+	height: 40px;
+	min-height: 30px;
+	min-width: 30px;
+}
+
+#nav div div {
+	color: rgb(158, 158, 158);
+}
+
+#nav .nav-btn .nav_btn_no div:nth-child(1) {
+	text-align: center;
+	line-height: 16px;
+	color: white;
+}

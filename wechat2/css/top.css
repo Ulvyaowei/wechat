@@ -1,0 +1,168 @@
+#max {
+	width: 100%;
+	height: 100%;
+	min-height: 300px;
+	position: fixed;
+	/*border: 1px solid red;*/
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+}
+
+#top {
+	width: 100%;
+	height: 72px;
+	background-color: #424242;
+	color: #BDBDBD;
+	z-index: 1;
+}
+
+#head {
+	width: 100%;
+	height: 20px;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+#head div {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#top2 {
+	width: 35%;
+	height: 20px;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	display: flex;
+}
+
+#xinhao {
+	width: 50%;
+	display: flex;
+	/*justify-content: flex-end;*/
+	align-items: flex-end;
+}
+
+#xinhao div {
+	margin: 2px;
+	border-radius: 30%;
+}
+
+#xinhao1 {
+	width: 2px;
+	height: 3px;
+	border: 1px solid white;
+	background-color: white;
+	flex-flow: wrap;
+}
+
+#xinhao2 {
+	width: 2px;
+	height: 6px;
+	border: 1px solid white;
+	background-color: white;
+}
+
+#xinhao3 {
+	width: 2px;
+	height: 9px;
+	border: 1px solid white;
+	background-color: white;
+}
+
+#xinhao4 {
+	width: 2px;
+	height: 12px;
+	border: 1px solid white;
+}
+
+#dianliang {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	/*border: 1px solid white;*/
+}
+
+#dianliang1 {
+	width: 30px;
+	height: 12px;
+	border: 1px solid white;
+	position: relative;
+}
+
+#dianliang2 {
+	width: 20%;
+	height: 12px;
+	background-color: red;
+	position: absolute;
+	left: 0px
+}
+
+#dianliang3 {
+	width: 2px;
+	height: 2px;
+	border: 1px solid white;
+	background-color: white;
+}
+
+#neck {
+	width: 100%;
+	height: 50px;
+	/*border: 1px solid red;*/
+	line-height: 50px;
+	font-size: larger;
+	position: relative;
+}
+
+#seach {
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	top: 7px;
+	right: 15px;
+	justify-content: flex-end;
+	align-items: center;
+	display: flex;
+	/*flex-flow: row;*/
+}
+
+.popup {
+	height: 250px;
+	width: 200px;
+	background: #616161;
+	position: absolute;
+	right: 20px;
+	top: 45px;
+	z-index: 1;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+}
+
+#content {
+	width: 100%;
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+
+/* 最后一个弹出层 去掉底部 边框  */
+
+#content:last-child {
+	border-bottom: none;
+}
+
+#content div {
+	padding: 0px 15px 0px 15px;
+}
+
+#content img {
+	height: 30px;
+	width: 30px;
+}

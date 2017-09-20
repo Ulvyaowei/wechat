@@ -1,0 +1,163 @@
+.search {
+	height: 40px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0px 0px 2px rgb(238, 238, 238);
+}
+
+.search input {
+	width: 98%;
+	height: 26px;
+	border-radius: 6px;
+	border: 1px solid rgb(224, 224, 224);
+	outline: none;
+	box-shadow: 0px 0px 10px gainsboro inset;
+	background: url(../img/icon/control/搜索.svg) no-repeat;
+	background-size: contain;
+	background-position-x: 42%;
+	background-color: white;
+}
+
+.search input:focus {
+	background: none;
+	background-color: white;
+}
+
+.search input::-webkit-input-placeholder {
+	text-align: center;
+	color: rgb(224, 224, 224);
+	font-size: 16px;
+}
+
+.detail {
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	border-bottom: 1px solid #F5F5DC;
+	display: flex;
+	/*	text-indent: 10px;*/
+	align-items: center;
+}
+
+.head_photo {
+	width: 50px;
+	height: 50px;
+	margin: 0 10px 0 10px;
+	position: relative;
+	/*text-align: center;*/
+	/*align-items: center;*/
+}
+
+.head_photo img {
+	width: 100%;
+	height: 100%;
+	min-width: 50px;
+	min-height: 50px;
+}
+
+.chatting {
+	width: 93%;
+	height: 60px;
+	position: relative;
+}
+
+.nickname {
+	width: 50%;
+	height: 50%;
+	line-height: 30px;
+	font-size: 18px;
+	/*margin: 2px 0 0 0;*/
+	font-family: "微软雅黑";
+}
+
+.chat-time {
+	width: 20%;
+	height: 50%;
+	position: absolute;
+	font-size: 14px;
+	top: 5px;
+	right: 10px;
+	line-height: 30px;
+	text-align: right;
+	color: rgb(189, 189, 189);
+}
+
+.chat_abstract {
+	overflow-x: hidden;
+	width: 90%;
+	height: 50%;
+	line-height: 30px;
+	color: rgb(189, 189, 189);
+	font-size: 14px;
+	/*margin: 0 0 6px 0;*/
+	font-family: "微软雅黑";
+	/*word-wrap: break-word;*/
+	white-space: nowrap;
+}
+
+#tool_add_extension {
+	/*border: 1px solid red;*/
+	width: 130px;
+	height: 170px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(66, 66, 66);
+}
+
+#tool_add_extension hr {
+	width: 80%;
+	border: 0;
+	background-color: rgb(97, 97, 97);
+	height: 1px;
+}
+
+.tool-items {
+	width: 80%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+.t_icon {
+	height: 20px;
+	width: 20px;
+	/*background: url(../img/icon/control/发起群聊.svg) no-repeat;
+	background-size: cover;
+	background-position: center;*/
+}
+
+.t_icon img {
+	height: 100%;
+	width: 100%;
+}
+
+.t_txt {
+	color: white;
+	text-align: left;
+}
+
+.nabla {
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	font-size: 0;
+	line-height: 0;
+	border-color: transparent transparent rgb(66, 66, 66) transparent;
+	border-style: dashed dashed solid dashed;
+	border-width: 10px;
+	position: relative;
+	left: 100px;
+}
+
+#tool_add_ex {
+	height: 180px;
+	width: 130px;
+	position: absolute;
+	z-index: 1;
+	right: 1%;
+	top: -5px;
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+			}
+			
+			::-webkit-scrollbar {
+				display: none;
+			}
+		</style>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+		<link rel="stylesheet" href="../css/chat1.css" />
+	</head>
+
+	<body>
+		<div id="max">
+			<div id="top">
+				<div id="head">
+					<a>&nbsp;中国移动&nbsp;12:12</a>
+					<div id="top1">
+						<div id="xinhao">4G
+							<div id="xinhao1"></div>
+							<div id="xinhao2"></div>
+							<div id="xinhao3"></div>
+							<div id="xinhao4"></div>
+						</div>
+						<div id="dianliang">20%&nbsp;
+							<div id="dianliang1">
+								<div id="dianliang2"></div>
+							</div>
+							<div id="dianliang3"></div>
+						</div>
+					</div>
+				</div>
+				<div id="head1">
+					<a>&nbsp;中国移动&nbsp;12:12</a>
+					<div id="top1">
+						<div id="xinhao">4G
+							<div id="xinhao1"></div>
+							<div id="xinhao2"></div>
+							<div id="xinhao3"></div>
+							<div id="xinhao4"></div>
+						</div>
+						<div id="dianliang">20%&nbsp;
+							<div id="dianliang1">
+								<div id="dianliang2"></div>
+							</div>
+							<div id="dianliang3"></div>
+						</div>
+					</div>
+				</div>
+				<div id="neck">
+					<a id="top2" href="微信.html"></a>
+					<a id="top21" href="chat1.html"></a>
+					<a id="top3">雷军</a>
+					<a id="top31">位置</a>
+					<a id="top4" href="#"></a>
+					<a id="top41"></a>
+					<input id="top42" type="button" value="发送" />
+				</div>
+				<div id="neck1">
+					<a id="top22" href="chat1.html"></a>
+					<a id="top32">发红包</a>
+					<a id="top43" href="#"></a>
+				</div>
+			</div>
+			<div id="content"></div>
+			<div id="end">
+				<div id="operate">
+					<div id="w"></div>
+					<div id="voice"></div>
+					<div id="in">
+						<input type="button" value="按住  说话" id="on" />
+						<input id="write">
+						<div id="f"></div>
+					</div>
+					<div id="w1"></div>
+					<div id="face"></div>
+					<div id="more"></div>
+					<input name="send" id="send" type="button" value="发送" />
+				</div>
+				<div id="hide1">
+					<div id="hide11">
+						<div id="i1"><img src="../img/pokeman/凯西.png"  style="width: 40px;height: 40px;"/></div>
+						<div id="i2"><img src="../img/pokeman/卡比兽.png" style="width: 40px;height: 40px;"/></div>
+						<div id="i3"><img src="../img/pokeman/可达鸭.png" style="width: 40px;height: 40px;"/></div>
+						<div id="i4"><img src="../img/pokeman/急冻鸟.png" style="width: 40px;height: 40px;"/></div>
+						<div id="i5"><img src="../img/pokeman/杰尼龟.png" style="width: 40px;height: 40px;"/></div>
+						<div id="i6"><img src="../img/pokeman/梦幻.png" style="width: 40px;height: 40px;"/></div>
+					</div>
+					<div id="hide11">
+						<div id="i7"><img src="../img/pokeman/毛球.png" style="width: 40px;height: 40px;"/></div>
+						<div id="i8"><img src="../img/pokeman/波波.png" style="width: 40px;height: 40px;"/></div>
+						<div id="i9"><img src="../img/pokeman/猴怪.png" style="width: 40px;height: 40px;"/></div>
+						<div id="i10"><img src="../img/pokeman/超音蝠.png" style="width: 40px;height: 40px;"/></div>
+						<div id="i11"><img src="../img/pokeman/迷你龙.png" style="width: 40px;height: 40px;"/></div>
+						<div id="i12"><img src="../img/pokeman/妙蛙种子.png" style="width: 40px;height: 40px;"/></div>
+					</div>
+				</div>
+				<div id="hide2">
+					<div id="hide21">
+						<div id="h1"><input onchange="preview(this)" multiple="multiple" type="file" style="width: 35px;height: 35px; opacity: 0;" />相册</div>
+						<div id="h2" style="line-height: 85px;">拍摄</div>
+						<div id="h3" style="line-height: 85px;">聊天</div>
+						<div id="h4" style="line-height: 85px;">位置</div>
+					</div>
+					<div id="hide21" style="line-height: 85px;">
+						<div id="h5">红包</div>
+						<div id="h6">语音</div>
+						<div id="h7">名片</div>
+						<div id="h8">收藏</div>
+					</div>
+				</div>
+			</div>
+			<div id="money">
+				<div class="m1">
+					<div class="le">单个金额</div>
+					<input class="wri" id="number1" placeholder="0.00" style="direction: rtl; text-indent: 30px;" maxlength="5" onkeyup="value=value.replace(/[^\d.]/g,'')" />
+					<div class="ri">元</div>
+				</div>
+				<div class="m1">
+					<div class="le">留言</div>
+					<input class="wri" id="word" style="direction: rtl; text-indent: 10px;" maxlength="13" placeholder="恭喜发财，大吉大利" />
+					<div class="ri"></div>
+				</div>
+				<div id="m2">
+					<div>¥</div>
+					<div id="number2">0.00</div>
+				</div>
+				<div class="m1">
+					<div class="le"></div>
+					<input id="m3" value="塞钱进红包" type="button" disabled="disabled" />
+					<div class="ri"></div>
+				</div>
+				<div id="m4">对方可领取的红包金额为0.01~200元</div>
+			</div>
+			<div id="place" style="display: none;">
+				<div id="map"></div>
+				<div></div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/chat1.js"></script>
+	<script type="text/javascript" src="../jquery/jquery1.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=B74678ff97d2fcbe71d6d0ca0421cb56"></script>
+
+</html>
+<script>
+
+	$(function() {
+
+		var key = "92c0bb681336485785d5f074a51c0d2f";
+		var url = "http://www.tuling123.com/openapi/api";
+
+        //发文字
+		$('#send').click(function() {
+			var info = {
+				"key": key,
+				"info": $("#write").val() // = write.value
+			}
+
+			var self1 = $("<div class='img2'></div>")
+			var self3 = $("<div class='min1'></div>")
+			var self2 = $("<div class='content2'></div><br /><br /><br />")
+			self2.html($("#write").val()) //   div.innerHTML = xxxx
+
+			$("#content").append(self1)
+			$("#content").append(self3)
+			$("#content").append(self2)
+
+			$.ajax({
+				type: "POST",
+				url: url,
+				data: info,
+				dataType: "json",
+				success: function(result) {
+
+					var robot1 = $("<div class='img1'></div>")
+					var robot3 = $("<div class='min'></div>")
+					var robot2 = $("<div class='content1'></div><br /><br /><br />")
+					robot2.html(result.text)
+
+					$("#content").append(robot1)
+					$("#content").append(robot3)
+					$("#content").append(robot2)
+
+				}
+
+			});
+
+		})
+		
+		//发红包
+		$('#m3').click(function() {
+			var info = {
+				"key": key,
+			}
+
+			var self1 = $("<div class='img2'></div>")
+			var self3 = $("<div class='min2'></div>")
+			var self2 = $("<div class='content4'><img src='../img/1505.png'></div><br /><br /><br /><br /><br /><br />")			
+
+			$("#content").append(self1)
+			$("#content").append(self3)
+			$("#content").append(self2)
+
+			$.ajax({
+				type: "POST",
+				url: url,
+				data: info,
+				dataType: "json",
+				success: function(result) {
+
+					var robot1 = $("<div class='img1'></div>")
+					var robot3 = $("<div class='min'></div>")
+					var robot2 = $("<div class='content1'></div><br /><br /><br />")
+					robot2.html(result.text)
+
+					$("#content").append(robot1)
+					$("#content").append(robot3)
+					$("#content").append(robot2)
+
+				}
+
+			});
+
+		})
+		
+		//发语音
+		var time;
+		$("#on").mousedown(function() {
+			time = setTimeout(function() {
+				$("#on").val("松开  结束");
+			}, 500)
+		})
+
+		$("#on").mouseup(function() {
+			clearTimeout(time);
+			$("#on").val("按住  说话");
+			
+			var info = {
+				"key": key,
+			}
+
+			var self1 = $("<div class='img2'></div>")
+			var self3 = $("<div class='min1'></div>")
+			var self2 = $("<div class='content5'></div><br /><br /><br />")
+			self2.html("<img src='../img/wx/语音.svg' />")
+
+			$("#content").append(self1)
+			$("#content").append(self3)
+			$("#content").append(self2)
+
+			$.ajax({
+				type: "POST",
+				url: url,
+				data: info,
+				dataType: "json",
+				success: function(result) {
+
+					var robot1 = $("<div class='img1'></div>")
+					var robot3 = $("<div class='min'></div>")
+					var robot2 = $("<div class='content1'></div><br /><br /><br />")
+					robot2.html(result.text)
+
+					$("#content").append(robot1)
+					$("#content").append(robot3)
+					$("#content").append(robot2)
+
+				}
+
+			});
+			
+		});
+
+	})
+
+    //发图片
+	function a(b) {
+
+		var key = "92c0bb681336485785d5f074a51c0d2f";
+		var url = "http://www.tuling123.com/openapi/api";
+
+		var info = {
+			"key": key,
+		}
+
+		var self1 = $("<div class='img2'></div>")
+		var self3 = $("<div class='min1'></div>")
+		var self2 = $("<div class='content3'></div><br /><br /><br />")
+		self2.append(b)
+
+		$("#content").append(self1)
+		$("#content").append(self3)
+		$("#content").append(self2)
+
+		$.ajax({
+			type: "POST",
+			url: url,
+			data: info,
+			dataType: "json",
+			success: function(result) {
+
+				var robot1 = $("<div class='img1'></div>")
+				var robot3 = $("<div class='min'></div>")
+				var robot2 = $("<div class='content1'></div><br /><br /><br />")
+				robot2.html(result.text)
+
+				$("#content").append(robot1)
+				$("#content").append(robot3)
+				$("#content").append(robot2)
+
+			}
+
+		});
+
+	}
+
+	function preview(file) {
+
+		if(file.files && file.files[0]) {
+			var reader = new FileReader();
+			reader.readAsDataURL(file.files[0]);
+			//当读取完毕时
+			reader.onload = function() {
+				var p = document.createElement("div")
+				p.id = "p";
+				//文件一旦开始读取，无论成功或失败，实例的 result 属性都会被填充
+				p.innerHTML = '<img src="' + event.target.result + '" />';
+				a(p);
+                
+                //聊天图片放大
+				var light2;
+				var mp = document.getElementById("p");
+				mp.onclick = function() {
+
+					createLight2();
+
+					light2.onclick = function() {
+						document.body.removeChild(this)
+					}
+				}
+
+				function createLight2() {
+					var w = screen.availWidth;
+					var h = screen.availHeight;
+
+					light2 = document.createElement("div");
+					light2.style.width = w + "px";
+					light2.style.height = h + "px";
+					light2.className = "light";
+
+					createLogin2();
+
+					document.body.appendChild(light2);
+				}
+
+				function createLogin2() {
+					var d = document.createElement("div");
+					d.className = "login3";
+
+					var img = document.createElement("img");
+					var url = $('#p img').attr("src");
+					img.src = url;
+					img.width = ("300");
+					img.height = ("500");
+                    
+                    d.appendChild(img);
+					light2.appendChild(d);
+
+				}
+			}
+		}
+	}
+	
+</script>

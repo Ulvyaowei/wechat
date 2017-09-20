@@ -1,0 +1,54 @@
+.discover_div {
+	width: 100%;
+	height: 45px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	position: relative;
+	border-bottom: 1px solid rgb(238, 238, 238);
+	border-top: 1px solid rgb(238, 238, 238);
+}
+
+.discover_img {
+	width: 35px;
+	height: 35px;
+	margin: 15px;
+}
+
+.discover_img img {
+	width: 100%;
+	height: 100%;
+	min-width: 30px;
+	min-height: 30px;
+}
+
+.discover_text button {
+	text-indent: 5px;
+	font-family: "微软雅黑";
+	border: 0;
+}
+
+.discover_text:after {
+	position: absolute;
+	right: 20px;
+	font-size: 24px;
+	color: rgb(238, 238, 238);
+	content: '>';
+}
+
+.border_bottom {
+	border-top: 0;
+	border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.discover_margin {
+	margin: 10px 0;
+}
+
+.discover_text button:after {
+	position: absolute;
+	right: 20px;
+	font-size: 24px;
+	color: rgb(238, 238, 238);
+	content: '>';
+}

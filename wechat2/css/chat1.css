@@ -1,0 +1,679 @@
+#max {
+	width: 100%;
+	height: 100%;
+	min-height: 300px;
+	/*display: flex;*/
+	/*flex-flow: column;*/
+	\
+}
+
+#top {
+	width: 100%;
+	height: 72px;
+	background-color: #424242;
+	color: #BDBDBD;
+	font-family: "微软黑体";
+	z-index: 1;
+}
+
+#head {
+	width: 100%;
+	height: 20px;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+#head1 {
+	width: 100%;
+	height: 20px;
+	background-color: #ef5350;
+	position: relative;
+	display: flex;
+	align-items: center;
+	display: none;
+}
+
+#head div {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#top1 {
+	width: 35%;
+	height: 20px;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	display: flex;
+}
+
+#xinhao {
+	width: 50%;
+	display: flex;
+	/*justify-content: flex-end;*/
+	align-items: flex-end;
+}
+
+#xinhao div {
+	margin: 2px;
+	border-radius: 30%;
+}
+
+#xinhao1 {
+	width: 2px;
+	height: 3px;
+	border: 1px solid white;
+	background-color: white;
+	flex-flow: wrap;
+}
+
+#xinhao2 {
+	width: 2px;
+	height: 6px;
+	border: 1px solid white;
+	background-color: white;
+}
+
+#xinhao3 {
+	width: 2px;
+	height: 9px;
+	border: 1px solid white;
+	background-color: white;
+}
+
+#xinhao4 {
+	width: 2px;
+	height: 12px;
+	border: 1px solid white;
+}
+
+#dianliang {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	/*border: 1px solid white;*/
+}
+
+#dianliang1 {
+	width: 30px;
+	height: 12px;
+	border: 1px solid white;
+	position: relative;
+}
+
+#dianliang2 {
+	width: 20%;
+	height: 12px;
+	background-color: red;
+	position: absolute;
+	left: 0px;
+}
+
+#dianliang3 {
+	width: 2px;
+	height: 2px;
+	border: 1px solid white;
+	background-color: white;
+}
+
+#neck {
+	width: 100%;
+	height: 50px;
+	/*border: 1px solid red;*/
+	line-height: 50px;
+	font-size: larger;
+	position: relative;
+}
+
+#neck1 {
+	width: 100%;
+	height: 52px;
+	background-color: #ef5350;
+	/*border: 1px solid red;*/
+	line-height: 50px;
+	font-size: larger;
+	position: relative;
+	display: none;
+}
+
+#top22 {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 12px;
+	left: 20px;
+	/*border: 1px solid red;*/
+	background: url(../img/icon/material/返回.svg);
+	background-size: contain;
+}
+
+#top32 {
+	width: 70px;
+	height: 30px;
+	position: absolute;
+	left: 60px;
+}
+
+#top43 {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	background: url(../img/wx/帮助与反馈.png);
+	background-size: contain;
+}
+
+#top2 {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 12px;
+	left: 20px;
+	/*border: 1px solid red;*/
+	background: url(../img/icon/material/返回.svg);
+	background-size: contain;
+}
+
+#top21 {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 12px;
+	left: 20px;
+	/*border: 1px solid red;*/
+	background: url(../img/icon/material/返回.svg);
+	background-size: contain;
+	display: none;
+}
+
+#top3 {
+	width: 70px;
+	height: 30px;
+	position: absolute;
+	left: 60px;
+}
+
+#top31 {
+	width: 70px;
+	height: 30px;
+	position: absolute;
+	left: 60px;
+	display: none;
+}
+
+#top4 {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	background: url(../img/wx/我.svg);
+	background-size: contain;
+}
+
+#top41 {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 12px;
+	right: 80px;
+	background: url(../img/wx/微信端-搜索.png);
+	background-size: contain;
+	;
+	display: none;
+}
+
+#top42 {
+	width: 50px;
+	height: 30px;
+	background-color: chartreuse;
+	position: absolute;
+	top: 13px;
+	right: 10px;
+	display: none;
+}
+
+#content {
+	width: 100%;
+	height: 75%;
+	
+	overflow: scroll;
+	background-size: contain;
+	position: absolute;
+	top: 72px;
+	padding-top: 10px;
+}
+
+.img1 {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	border: 1px solid #424242;
+	background: url(../img/024f78f0f736afc30a208a85b619ebc4b7451225.jpg) no-repeat;
+	background-size: cover;
+	float: left;
+	position: absolute;
+	left: 10px;
+}
+
+.min {
+	width: 15px;
+	height: 15px;
+	background-color: #424242;
+	color: #E0E0E0;
+	position: relative;
+	top: 15px;
+	left: 70px;
+	float: left;
+	transform: rotate(45deg);
+}
+
+.content1 {
+	max-width: 70%;
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+	background-color: #424242;
+	color: #E0E0E0;
+	font-size: 20px;
+	padding: 0px 5px 0px 5px;
+	border-radius: 5px;
+	position: absolute;
+	left: 78px;
+	float: left;
+}
+
+.img2 {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	border: 1px solid #424242;
+	background: url(../img/wx/微信图片_20170731162607.jpg);
+	background-size: cover;
+	position: absolute;
+	right: 10px;
+	float: right;
+}
+
+.content2 {
+	max-width: 70%;
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+	background-color: #424242;
+	color: #E0E0E0;
+	font-size: 20px;
+	padding: 0px 30px 0px 5px;
+	border-radius: 5px;
+	position: absolute;
+	right: 80px;
+	float: right;
+}
+
+.min1 {
+	width: 15px;
+	height: 15px;
+	background-color: #424242;
+	position: relative;
+	top: 15px;
+	right: 72px;
+	float: right;
+	transform: rotate(45deg);
+}
+
+.content3 {
+	width: 90px;
+	height: 50px;
+	border-radius: 5px;
+	position: absolute;
+	right: 80px;
+	float: right;
+}
+
+.content4{
+	width: 180px;
+	height: 90px;
+	border: 1px solid red;
+	border-radius: 5px;
+	position: absolute;
+	right: 80px;
+	float: right;
+}
+
+.content5 {
+	width: 45px;
+	height: 50px;
+	border-radius: 5px;
+	background-color: #424242;
+	position: absolute;
+	right: 80px;
+	float: right;
+}
+
+.min2 {
+	width: 15px;
+	height: 15px;
+	background-color: #f44336;
+	position: relative;
+	top: 15px;
+	right: 72px;
+	float: right;
+	transform: rotate(45deg);
+}
+
+#p img {
+	width: 90px;
+	height: 50px;
+}
+
+#end {
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	background-color: white;
+}
+
+#operate {
+	width: 100%;
+	height: 50px;
+	border: 1px solid #E0E0E0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#w {
+	width: 30px;
+	height: 30px;
+	background: url(../img/wx/键盘.svg);
+	background-size: contain;
+	display: none;
+}
+
+#w1 {
+	width: 30px;
+	height: 30px;
+	background: url(../img/wx/键盘.svg);
+	background-size: contain;
+	display: none;
+}
+
+#voice {
+	width: 30px;
+	height: 30px;
+	/*border: 1px solid red;*/
+	background: url(../img/wx/语音1.svg);
+	background-size: contain;
+}
+
+#on {
+	width: 100%;
+	height: 40px;
+	outline: none;
+	display: none;
+}
+
+#in {
+	width: 70%;
+	height: 40px;
+	display: flex;
+}
+
+#write {
+	width: 100%;
+	height: 40px;
+	font-size: 20px;
+	text-indent: 10px;
+	line-height: 40px;
+	border: none;
+	border-bottom: 1px solid black;
+	outline: medium;
+}
+
+#f {
+	width: 32px;
+	height: 32px;
+	border-bottom: 1px solid black;
+	position: relative;
+	top: 8px;
+}
+
+.f {
+	width: 30px;
+	height: 30px;
+	float: right;
+	position: relative;
+	right: 82px;
+	top: -50px;
+}
+
+#face {
+	width: 30px;
+	height: 30px;
+	background: url(../img/wx/聊天表情.svg);
+	background-size: contain;
+}
+
+#more {
+	width: 30px;
+	height: 30px;
+	/*border: 1px solid red;*/
+	background: url(../img/wx/添加.svg);
+	background-size: contain;
+}
+
+#send {
+	background-color: green;
+	padding: 3px;
+	display: none;
+	border-radius: 10px;
+}
+
+#hide1 {
+	width: 100%;
+	height: 100px;
+	display: none;
+}
+
+#hide11 {
+	display: flex;
+	justify-content: space-around;
+}
+
+#hide11 div {
+	width: 40px;
+	height: 40px;
+	margin: 3px;
+	text-align: center;
+}
+
+#hide11 img{
+	width: 40px;
+	height: 40px;
+}
+#hide2 {
+	width: 100%;
+	height: 100px;
+	display: none;
+}
+
+#hide21 {
+	display: flex;
+	justify-content: space-around;
+}
+
+#hide21 div {
+	width: 40px;
+	height: 40px;
+	font-size: 10px;
+	margin: 3px;
+	text-align: center;
+}
+
+#h1 {
+	background: url(../img/wx/相册1.svg);
+	background-size: contain;
+}
+
+#h2 {
+	background: url(../img/wx/拍摄.svg);
+	background-size: contain;
+}
+
+#h3 {
+	background: url(../img/wx/视频.svg);
+	background-size: contain;
+}
+
+#h4 {
+	background: url(../img/wx/位置.svg);
+	background-size: contain;
+}
+
+#map {
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.light {
+	background-color: rgba(105, 105, 105, 0.7);
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.login {
+	width: 200px;
+	height: 100px;
+	border-radius: 10px;
+	background-color: white;
+	margin: auto;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+
+.login1 {
+	width: 198px;
+	height: 48px;
+	border-bottom: 1px solid #E0E0E0;
+	line-height: 48px;
+	text-indent: 20px;
+}
+
+.login2 {
+	width: 198px;
+	height: 48px;
+	line-height: 48px;
+	text-indent: 20px;
+}
+
+.login3{
+	width: 300px;
+	height: 500px;
+	margin: auto;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+
+#h5 {
+	background: url(../img/wx/红包.svg);
+	background-size: contain;
+}
+
+#money {
+	width: 100%;
+	height: 90%;
+	min-height: 600px;
+	background-color: #EEEEEE;
+	border: 1px solid white;
+	display: none;
+}
+
+.m1 {
+	width: 90%;
+	height: 45px;
+	display: flex;
+	align-content: center;
+	line-height: 45px;
+	margin-top: 25px;
+}
+
+.le {
+	width: 80px;
+	height: 40px;
+	position: relative;
+	left: 75px;
+}
+
+.wri {
+	width: 90%;
+	height: 45px;
+	border: none;
+	outline: medium;
+}
+
+.ri {
+	width: 20px;
+	height: 40px;
+	position: relative;
+	right: 25px;
+}
+
+#m2 {
+	width: 100%;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	font-size: 25px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+#m3 {
+	width: 80%;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	font-size: 17px;
+	color: #EEEEEE;
+	background-color: #ff8a80;
+	outline: medium;
+}
+
+#m4 {
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 13px;
+	color: #757575;
+	position: fixed;
+	bottom: 5px;
+}
+
+#h6 {
+	background: url(../img/wx/语音输入.svg);
+	background-size: contain;
+}
+
+#h7 {
+	background: url(../img/wx/我1.svg);
+	background-size: contain;
+}
+
+#h8 {
+	background: url(../img/wx/我的收藏.svg);
+	background-size: contain;
+}
+

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>WeChat</title>
+		<!--如果在移动端显示，需要此行代码-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+
+	</head>
+
+	<body>
+		<div id="container">
+			<!--顶端通知栏开始-->
+			<div id="top">
+				<div id="top-status">
+					<div id="status-sign">
+						<div id="sign_5">
+							<div class="signal"></div>
+							<div class="signal"></div>
+							<div class="signal"></div>
+							<div class="signal"></div>
+							<div class="nosignal"></div>
+						</div>
+						<div id="sign-carrier">中国移动 &nbsp; 4G</div>
+					</div>
+					<div id="status-time">10:38</div>
+					<div id="status-power">
+						<div>80%&nbsp;</div>
+						<div>
+							<div id="power-time"></div>
+						</div>
+						<div></div>
+					</div>
+				</div>
+
+				<div id="top-caption">
+					<div id="headline">微信(1)</div>
+					<div id="tool_discover" class="tool_left nav_btn_no" onclick="back_discover()">
+						<img src="img/icon/material/返回.svg" />发现
+					</div>
+					<div id="tool_index" class="tool_left ">
+						<img src="img/icon/material/返回.svg" />微信
+					</div>
+					<div id="tool" class="tool" onclick="display_tool_add()">
+						<img src="img/icon/material/加号.svg" />
+					</div>
+					<div id="tool_camera" class="tool ">
+						<img src="img/icon/me/相机.jpg" />
+					</div>
+					<div id="tool_people" class="tool">
+						<img src="img/chat/个人名片.svg" />
+					</div>
+				</div>
+			</div>
+			<!--顶端通知栏结束-->
+
+			<!--微信主页面开始-->
+			<div id="content-index" class="content">
+				<div id="tool_add_ex">
+					<div class="nabla"></div>
+					<div id="tool_add_extension">
+						<div class="tool-items">
+							<div class="t_icon"><img src="img/icon/control/发起群聊.svg" /></div>
+							<div class="t_txt">发起群聊</div>
+						</div>
+						<hr/>
+						<div class="tool-items">
+							<div class="t_icon"><img src="img/icon/control/添加朋友.svg" /></div>
+							<div class="t_txt">添加朋友</div>
+						</div>
+						<hr/>
+						<div class="tool-items">
+							<div class="t_icon"><img src="img/icon/control/扫一扫.svg" /></div>
+							<div class="t_txt">扫一扫&nbsp;&nbsp;&nbsp;</div>
+						</div>
+						<hr/>
+						<div class="tool-items">
+							<div class="t_icon"><img src="img/icon/control/收付款.svg" /></div>
+							<div class="t_txt">收付款&nbsp;&nbsp;&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div class="search">
+					<input type="text" placeholder="搜索" />
+				</div>
+				<div class="detail">
+					<div class="head_photo">
+						<div class="red_one red_one_top">1</div>
+						<img src="img/photo/tx4.jpg" />
+					</div>
+					<div class="chatting">
+						<div class="nickname">尤俊</div>
+						<div class="chat-time">17:17</div>
+						<div class="chat_abstract">你们先去吃吧。</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="head_photo">
+						<img src="img/photo/tx5.jpg" />
+					</div>
+					<div class="chatting">
+						<div class="nickname">杨尚</div>
+						<div class="chat-time">昨天23:48</div>
+						<div class="chat_abstract">我们也写的了</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="head_photo">
+						<img src="img/photo/moments-portrait/开心猫.jpg" />
+					</div>
+					<div class="chatting">
+						<div class="nickname">曾冠霖</div>
+						<div class="chat-time">昨天14:17</div>
+						<div class="chat_abstract">[文件]评论.svg</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="head_photo">
+						<img src="img/tx/tx7.jpg" />
+					</div>
+					<div class="chatting">
+						<div class="nickname">尤昕</div>
+						<div class="chat-time">昨天8:17</div>
+						<div class="chat_abstract">[语音聊天]</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="head_photo">
+						<img src="img/tx/tx2.jpg" />
+					</div>
+					<div class="chatting">
+						<div class="nickname">阿狸</div>
+						<div class="chat-time">星期一</div>
+						<div class="chat_abstract">您已添加了阿狸，现在可以开始聊天了</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="head_photo">
+						<img src="img/tx/tx3.jpg" />
+					</div>
+					<div class="chatting">
+						<div class="nickname">猪猪侠</div>
+						<div class="chat-time">星期一</div>
+						<div class="chat_abstract">您已添加了猪猪侠，现在可以开始聊天了</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="head_photo">
+						<img src="img/tx/tx4.png" />
+					</div>
+					<div class="chatting">
+						<div class="nickname">尤胖子</div>
+						<div class="chat-time">2017/7/28</div>
+						<div class="chat_abstract">您已添加了尤胖子，现在可以开始聊天了</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="head_photo">
+						<img src="img/tx/tx5.jpg" />
+					</div>
+					<div class="chatting">
+						<div class="nickname">怀挺</div>
+						<div class="chat-time">2017/7/25</div>
+						<div class="chat_abstract">您已添加了怀挺，现在可以开始聊天了</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="head_photo">
+						<img src="img/tx/七娃.jpg" />
+					</div>
+					<div class="chatting">
+						<div class="nickname">七娃</div>
+						<div class="chat-time">星期六</div>
+						<div class="chat_abstract">您已添加了七娃，现在可以开始聊天了</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="head_photo">
+						<img src="img/tx/六娃.jpg" />
+					</div>
+					<div class="chatting">
+						<div class="nickname">六娃</div>
+						<div class="chat-time">星期五</div>
+						<div class="chat_abstract">您已添加了六娃，现在可以开始聊天了</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="head_photo">
+						<img src="img/tx/tx1.jpg" />
+					</div>
+					<div class="chatting">
+						<div class="nickname">文字君</div>
+						<div class="chat-time">星期四</div>
+						<div class="chat_abstract">您已添加了文字君，现在可以开始聊天了</div>
+					</div>
+				</div>
+			</div>
+			<!--微信主页面结束-->
+
+			<!--通讯录开始-->
+			<div id="content-ad_book" class="content">
+				<div id="word_nav">
+					<div class="nav-word">*</div>
+					<div class="nav-word">A</div>
+					<div class="nav-word">B</div>
+					<div class="nav-word">C</div>
+					<div class="nav-word">D</div>
+					<div class="nav-word">E</div>
+					<div class="nav-word">F</div>
+					<div class="nav-word">U</div>
+					<div class="nav-word">V</div>
+					<div class="nav-word">W</div>
+					<div class="nav-word">X</div>
+					<div class="nav-word">Y</div>
+					<div class="nav-word">Z</div>
+					<div class="nav-word">#</div>
+				</div>
+				<div class="search">
+					<input type="text" placeholder="搜索" />
+				</div>
+				<div class="discover_margin">
+					<div class="discover_div">
+						<div class="discover_img" style="background-color: rgb(255,112,67);">
+							<img src="img/photo/新的朋友.svg" />
+						</div>
+						<div class="discover_text">新的朋友</div>
+					</div>
+					<div class="discover_div">
+						<div class="discover_img border_bottom" style="background-color: rgb(76,175,80);">
+							<img src="img/photo/群聊.svg" />
+						</div>
+						<div class="discover_text">群聊</div>
+					</div>
+					<div class="discover_div">
+						<div class="discover_img" style="background-color: rgb(2,119,189);">
+							<img src="img/photo/标签.svg" />
+						</div>
+						<div class="discover_text">标签</div>
+					</div>
+					<div class="discover_div">
+						<div class="discover_img border_bottom" style="background-color: rgb(2,119,189);">
+							<img src="img/photo/图标.svg" />
+						</div>
+						<div class="discover_text">公众号</div>
+					</div>
+				</div>
+				<div class="word">A</div>
+
+				<div class="discover_div discover_margin">
+					<div class="discover_img">
+						<img src="img/icon/menu/me-pres.svg" />
+					</div>
+					<div class="discover_text">阿姨</div>
+				</div>
+				<div class="word">B</div>
+				<div class="discover_margin">
+					<div class="discover_div">
+						<div class="discover_img">
+							<img src="img/icon/menu/me.svg" />
+						</div>
+						<div class="discover_text">爸爸</div>
+					</div>
+					<div class="discover_div">
+						<div class="discover_img border_bottom">
+							<img src="img/icon/menu/me-press.svg" />
+						</div>
+						<div class="discover_text">宝宝</div>
+					</div>
+				</div>
+			</div>
+			<!--通讯录开始结束-->
+
+			<!--发现开始-->
+			<div id="content-discover" class="content">
+				<div class="discover_div discover_margin">
+					<div class="discover_img">
+						<img src="img/icon/dicovery/朋友圈.svg" />
+					</div>
+					<div class="discover_text">
+						<button type="button" class="nav_btn_no" onclick="display_friends()" id="friend_btn">朋友圈</button>
+					</div>
+				</div>
+				<div class="discover_margin">
+					<div class="discover_div">
+						<div class="discover_img">
+							<img src="img/icon/dicovery/扫一扫.svg" />
+						</div>
+						<div class="discover_text">扫一扫</div>
+					</div>
+					<div class="discover_div">
+						<div class="discover_img border_bottom">
+							<img src="img/icon/dicovery/摇一摇.svg" />
+						</div>
+						<div class="discover_text">摇一摇</div>
+					</div>
+				</div>
+				<div class="discover_margin">
+					<div class="discover_div">
+						<div class="discover_img">
+							<img src="img/icon/dicovery/看一看.svg" />
+						</div>
+						<div class="discover_text">看一看</div>
+					</div>
+					<div class="discover_div">
+						<div class="discover_img border_bottom">
+							<img src="img/icon/dicovery/搜一搜.svg" />
+						</div>
+						<div class="discover_text">搜一搜</div>
+					</div>
+				</div>
+				<div class="discover_margin">
+					<div class="discover_div">
+						<div class="discover_img">
+							<img src="img/icon/dicovery/附近的人.svg" />
+						</div>
+						<div class="discover_text">附近的人</div>
+					</div>
+					<div class="discover_div">
+						<div class="discover_img border_bottom">
+							<img src="img/icon/dicovery/漂流瓶.svg" />
+						</div>
+						<div class="discover_text">漂流瓶</div>
+					</div>
+				</div>
+				<div class="discover_margin">
+					<div class="discover_div">
+						<div class="discover_img">
+							<img src="img/icon/dicovery/购物.svg" />
+						</div>
+						<div class="discover_text">购物</div>
+					</div>
+					<div class="discover_div">
+						<div class="discover_img border_bottom">
+							<img src="img/icon/dicovery/游戏.svg" />
+						</div>
+						<div class="discover_text">游戏</div>
+					</div>
+				</div>
+				<div class="discover_div">
+					<div class="discover_img">
+						<img src="img/icon/dicovery/小程序.svg" />
+					</div>
+					<div class="discover_text">小程序</div>
+				</div>
+			</div>
+			<!--发现结束-->
+
+			<!--朋友圈的开始-->
+			<div id="friends" class="content">
+				<div id="cover">
+					<div id="user">
+						<div id="user-name">羚羊</div>
+						<div id="user-photo">
+							<img src="img/photo/MT.jpg" />
+						</div>
+					</div>
+				</div>
+				<div id="comment">
+					<!--<input type="text" id="comment-input" />-->
+					<div id="comment-ex"></div>
+				</div>
+				<div class="dynamic border_bottom discover_margin">
+					<div class="f_photo">
+						<img src="img/icon/moments/李彦宏0.jpg" />
+					</div>
+					<div class="f_content">
+						<div class="n_name">李彦宏</div>
+						<div class="n_content">快来试试我们的无人车！</div>
+						<div class="n_photo">
+							<img src="img/icon/moments/百度无人车.jpg" />
+						</div>
+						<div class="n_status">
+							<div class="n_time">30秒前</div>
+							<div class="reply_img">
+								<div class="praise_area">
+									<div class="praise_div">
+										<div class="praise_img">
+											<img src="img/icon/moments/赞.svg" width="20px" height="20px" />
+										</div>
+										<div class="praise_text">点赞</div>
+									</div>
+									<div class="comment_div">
+										<div class="comment_img">
+											<img src="img/photo/评论啊.svg" width="20px" height="20px" />
+										</div>
+										<div class="praise_text2">评论</div>
+									</div>
+								</div>
+								<img src="img/icon/moments/回复区域.svg" width="20px" height="20px" />
+							</div>
+						</div>
+						<div class="votes border_bottom">
+							<img src="img/icon/moments/赞.svg" /><span>饿了么，马化腾</span>
+						</div>
+						<div class="redux">
+							<div><span class="font">饿了么</span>：百度饿了么一家亲！</div>
+							<div><span class="font">美团</span>：外卖不清真，活该倒闭。</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="dynamic border_bottom discover_margin">
+					<div class="f_photo">
+						<img src="img/icon/moments/马云0.jpg" />
+					</div>
+					<div class="f_content">
+						<div class="n_name">马云</div>
+						<div class="n_content">叫一声baba给你清空购物车。</div>
+						<div class="n_photo3">
+							<img src="img/icon/moments/马云3.jpeg" />
+							<img src="img/icon/moments/马云1.jpg" />
+							<img src="img/icon/moments/马云2.jpeg" />
+						</div>
+						<div class="n_status">
+							<div class="n_time">11分钟前</div>
+							<div class="reply_img">
+								<div class="praise_area">
+									<div class="praise_div">
+										<div class="praise_img">
+											<img src="img/icon/moments/赞.svg" width="20px" height="20px" />
+										</div>
+										<div class="praise_text">点赞</div>
+									</div>
+									<div class="comment_div">
+										<div class="praise_img">
+											<img src="img/photo/评论啊.svg" width="20px" height="20px" />
+										</div>
+										<div class="praise_text2">评论</div>
+									</div>
+								</div>
+								<img src="img/icon/moments/回复区域.svg" width="20px" height="20px" />
+							</div>
+						</div>
+						<div class="votes border_bottom">
+							<img src="img/icon/moments/赞.svg" /><span>李彦宏，马化腾</span>
+						</div>
+						<div class="redux">
+							<div><span class="font">马化腾</span>：还是马总热爱技术 /抱拳。</div>
+							<div><span class="font">李彦宏</span>：马总谈的是理想！</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="dynamic border_bottom discover_margin">
+					<div class="f_photo">
+						<img src="img/icon/moments/马化腾.jpg" />
+					</div>
+					<div class="f_content">
+						<div class="n_name">马化腾</div>
+						<div class="n_content">小学生的市场有多大你们不会懂</div>
+						<div class="n_photo3">
+							<img src="img/icon/moments/露娜.jpg" />
+							<img src="img/icon/moments/李白.jpg" />
+						</div>
+						<div class="n_photo3">
+							<img src="img/icon/moments/韩信.jpg" />
+							<img src="img/icon/moments/刘备.jpg" />
+						</div>
+						<div class="n_status">
+							<div class="n_time">11分钟前</div>
+							<div class="reply_img">
+								<div class="praise_area">
+									<div class="praise_div">
+										<div class="praise_img">
+											<img src="img/icon/moments/赞.svg" width="20px" height="20px" />
+										</div>
+										<div class="praise_text">点赞</div>
+									</div>
+									<div class="comment_div">
+										<div class="praise_img">
+											<img src="img/photo/评论啊.svg" width="20px" height="20px" />
+										</div>
+										<div class="praise_text2">评论</div>
+									</div>
+								</div>
+								<img src="img/icon/moments/回复区域.svg" width="20px" height="20px" />
+							</div>
+						</div>
+						<div class="votes border_bottom">
+							<img src="img/icon/moments/赞.svg" /><span>小学生，马化腾</span>
+						</div>
+						<div class="redux">
+							<div><span class="font">小学生</span>：求马总充100Q币</div>
+							<div><span class="font">李彦宏</span>：抵制抄袭</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!--朋友圈结束-->
+
+			<!--我开始-->
+			<div id="content-me" class="content">
+				<div id="mine" class="discover_margin">
+					<div id="photo">
+						<img src="img/photo/MT.jpg" />
+					</div>
+					<div id="info">
+						<div id="myname">羚羊</div>
+						<div id="wechat_id">微信号：YLY__7758521</div>
+					</div>
+				</div>
+				<div class="discover_div">
+					<div class="discover_img">
+						<img src="img/icon/me/钱包.jpg" />
+					</div>
+					<div class="discover_text">钱包</div>
+				</div>
+				<div class="discover_margin">
+					<div class="discover_div">
+						<div class="discover_img">
+							<img src="img/icon/me/收藏.jpg" />
+						</div>
+						<div class="discover_text">收藏</div>
+					</div>
+					<div class="discover_div">
+						<div class="discover_img border_bottom">
+							<img src="img/icon/me/相册.jpg" />
+						</div>
+						<div class="discover_text">相册</div>
+					</div>
+					<div class="discover_div">
+						<div class="discover_img">
+							<img src="img/icon/moments/回复区域.svg" />
+						</div>
+						<div class="discover_text">卡包</div>
+					</div>
+					<div class="discover_div">
+						<div class="discover_img border_bottom">
+							<img src="img/icon/me/表情.jpg" />
+						</div>
+						<div class="discover_text">表情</div>
+					</div>
+				</div>
+				<div class="discover_div">
+					<div class="discover_img">
+						<img src="img/icon/me/设置.jpg" />
+					</div>
+					<div class="discover_text">设置</div>
+				</div>
+			</div>
+			<!--我结束-->
+			<!--聊天开始-->
+			<div id="chat-bottom">
+				<div id="voice" class="voice"></div>
+				<div id="chat_bottom_div">
+					<div id="voice_key">按住  说话</div>
+					<input type="text" id="chat-input" value="你好" />
+				</div>
+				<!--表情-->
+				<div id="chat-expression"></div>
+				<div id="chat-extra-btn"></div>
+			</div>
+			<!--聊天扩展-->
+			<div id="chatExtra">
+				<div class="extra-content">
+					<div class="chat-extra-content" id="ex-photo">
+						<div class="chat-extra-img">
+							<input type="file" id="file" onchange="preview(this)" />
+							<!--用for属性绑定file控件-->
+							<label for="file">
+							<img src="img/chat/照片.svg" class="ex" />
+						</label>
+						</div>
+						<div class="chat-extra-content-text">
+							照片
+						</div>
+					</div>
+					<div class="chat-extra-content">
+						<div class="chat-extra-img">
+							<img src="img/chat/拍照.svg" class="ex" />
+						</div>
+						<div class="chat-extra-content-text">
+							拍摄
+						</div>
+					</div>
+					<div class="chat-extra-content">
+						<div class="chat-extra-img">
+							<img src="img/chat/视频.svg" class="ex" />
+						</div>
+						<div class="chat-extra-content-text">
+							视频聊天
+						</div>
+					</div>
+					<div class="chat-extra-content">
+						<div class="chat-extra-img">
+							<img src="img/chat/位置.svg" class="ex" />
+						</div>
+						<div class="chat-extra-content-text">
+							位置
+						</div>
+					</div>
+				</div>
+				<div class="extra-content">
+					<div class="chat-extra-content">
+						<div class="chat-extra-img">
+							<img src="img/chat/红包.svg" class="ex" />
+						</div>
+						<div class="chat-extra-content-text">
+							红包
+						</div>
+					</div>
+					<div class="chat-extra-content">
+						<div class="chat-extra-img">
+							<img src="img/chat/转账.svg" class="ex" />
+						</div>
+						<div class="chat-extra-content-text">
+							转账
+						</div>
+					</div>
+					<div class="chat-extra-content">
+						<div class="chat-extra-img">
+							<img src="img/chat/语音.svg" class="ex" />
+						</div>
+						<div class="chat-extra-content-text">
+							语音输入
+						</div>
+					</div>
+					<div class="chat-extra-content">
+						<div class="chat-extra-img">
+							<img src="img/chat/收藏.svg" class="ex" />
+						</div>
+						<div class="chat-extra-content-text">
+							收藏
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--</div>-->
+			<!--聊天结束-->
+			<!--底部导航 -->
+			<div id="nav">
+				<div class="nav-btn">
+					<button class="nav_btn_no" type="button" onclick="display_index()">
+						<div class="red_one_bottom red_one">1</div>
+						<img src="img/icon/menu/聊天-press.svg"  id="pic1"/>
+						<div id="weixin">微信</div>	
+					</button>
+				</div>
+				<div class="nav-btn">
+					<button type="button" class="nav_btn_no" onclick="display_ad_book()">
+					<img src="img/icon/menu/通讯录.svg"  id="pic2"/>
+					<div id="txl">通讯录</div>
+					</button>
+				</div>
+				<div class="nav-btn">
+					<button type="button" class="nav_btn_no" onclick="display_discover()">
+						<img src="img/icon/menu/发现.svg"  id="pic3"/>
+						<div id="fx">发现</div>
+					</button>
+				</div>
+				<div class="nav-btn">
+					<button type="button" class="nav_btn_no" onclick="display_me()">
+						<img src="img/icon/menu/me.svg"  id="pic4"/>
+						<div id="wo">我</div>
+					</button>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/head.css" />
+<link rel="stylesheet" type="text/css" href="css/content_index.css" />
+<link rel="stylesheet" type="text/css" href="css/navigation.css" />
+<link rel="stylesheet" type="text/css" href="css/content_ad_book.css" />
+<link rel="stylesheet" type="text/css" href="css/content_discover.css" />
+<link rel="stylesheet" type="text/css" href="css/content_me.css" />
+<link rel="stylesheet" type="text/css" href="css/friends.css" />
+<link rel="stylesheet" type="text/css" href="css/chat.css" />
+<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/display_content.js" /></script>
+<script type="text/javascript" src="js/chat.js"></script>
+<script type="text/javascript" src="js/praise.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
